@@ -10,3 +10,4 @@ client = AsyncIOMotorClient(MONGO_URI)
 blog_client = client.Blogs.blog
 newsletter_client = client.Newsletter.newsletter
 demo_books_client = client.DemoBooks.demo_books
+plans_client = client.Plans.plans
