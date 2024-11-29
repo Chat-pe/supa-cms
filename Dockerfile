@@ -7,7 +7,6 @@ WORKDIR /app
 # RUN apk add --no-cache python-dev
 RUN pip install --upgrade pip
 
-RUN pip install --no-cache-dir psycopg2-binary
 COPY ./requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
